@@ -1,4 +1,6 @@
-function ChuckCard() {
+function ChuckNorrisCard(props) {
+
+// console.log("props", props)
 
     const chuckSoStylish = {
         width: "900px",
@@ -7,13 +9,13 @@ function ChuckCard() {
 
     return (
         <>
-            <h2>{ }</h2>
+            <h2>{props.chuckGreeting}</h2>
 
-            <img src={""}
+            <img src={props.chuckImage}
                 alt="Chuck Norris riding a killer whale"
                 style={chuckSoStylish} />
         </>
     )
 }
 
-export default ChuckCard;
+export default ChuckNorrisCard;

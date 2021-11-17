@@ -1,10 +1,10 @@
-function ChuckInfo() {
+function ChuckInfo(props) {
 
     return (
         <>
-            <p>Number of Whales Saved: </p>
+            <p>Number of Whales Saved: {props.whalesSaved}</p>
 
-            <p>Number of Round House Kicks (in the last day): </p>
+            <p>Number of Round House Kicks (in the last day): {props.roundHouseKicks}</p>
         </>
     )
 }
